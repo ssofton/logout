@@ -8,6 +8,7 @@ if (window.location.search.includes("app=flutter")) {
 
 $(document).on("click", ".logout", function (e) {
     e.preventDefault();
+    console.log("User clicked logout");
     if (isFlutterApp) {
         sendLogoutToFlutter();
     } else {
